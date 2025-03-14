@@ -1,38 +1,63 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-
-.App-link {
-  color: #61dafb;
+  background: #ffff00; 
+  min-height: 100vh;
 }
 
 .title {
-  margin: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   font-family: "Press Start 2P", system-ui;
-}
-.title-page-content {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
+  color: #7500be;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.resume,
+.projects,
+.fun-button {
+  position: absolute;
+  display: flex;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  text-align: center; /* Ensures text is centered inside the circle */
+  font-size: 18px; /* Adjusts the font size to make it fit within the circle */
+  color: rgb(255, 255, 255); /* Sets text color to white for better contrast */
+  padding: 10px;
+}
+
+
+.circles {
+  font-family: "VT323", monospace;
+  font-weight: bolder;
+  color: #6e3d88;
+}
+
+.resume {
+  position: absolute;
+  top: 500px; /* 50px from the top */
+  left: 250px;
+  position: center;
+  width: 200px;
+  height: 200px;
+  background-color: #FF6347; /* Tomato color */
+  border-radius: 50%; 
+}
+
+.projects {
+  position: absolute;
+  top: 200px; /* 200px from the top */
+  left: 350px;
+  width: 200px;
+  height: 200px;
+  background-color: #00bfff; /* Tomato color */
+  border-radius: 50%; 
+}
+
+.fun-button {
+  position: absolute;
+  bottom: 100px; /* 50px from the bottom */
+  right: 80px; /* 50px from the right */
+  width: 300px;
+  height: 300px;
+  background-color: #00ff11; /* Tomato color */
+  border-radius: 50%; 
 }
